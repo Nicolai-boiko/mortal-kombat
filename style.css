@@ -1,0 +1,198 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #010202;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  width: 90%;
+  max-width: 1146px;
+  margin: auto;
+  padding: 56px 0;
+}
+
+.logo {
+  display: block;
+}
+
+.user-photo {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin-left: 15px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  line-height: 20px;
+  color: white;
+}
+
+.app {
+  background: linear-gradient(
+    90deg,
+    #010202 0%,
+    #010202 35%,
+    rgba(1, 2, 2, 0.2) 75%
+  );
+  min-height: 100vh;
+}
+
+.film {
+  width: 90%;
+  max-width: 1146px;
+  margin: auto;
+  margin-top: 145px;
+}
+
+.description {
+  color: white;
+}
+
+.description {
+  max-width: 460px;
+  font-size: 21px;
+  line-height: 140%;
+  margin-bottom: 36px;
+}
+
+.tags {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin: 18px 0 9px;
+}
+
+.tags > * {
+  margin-right: 15px;
+  opacity: 0.4;
+  color: #e5e5e5;
+  font-size: 16px;
+  line-height: 140%;
+}
+
+.tags > span:last-child {
+  opacity: 0.5;
+  border: 1px solid #ffffff;
+  box-sizing: border-box;
+  border-radius: 2px;
+  padding: 1px 5px;
+}
+
+.button {
+  padding: 11px 25px;
+  border-radius: 6px;
+  border: 0;
+  font-size: 16px;
+  line-height: 140%;
+  color: white;
+  background: #2f2f2f;
+  cursor: pointer;
+}
+
+.button_colored {
+  background: #ea6e20;
+  margin-right: 24px;
+}
+
+.button_text {
+  margin-left: 10px;
+}
+
+.buttons-group {
+  display: flex;
+}
+
+.button_default {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form {
+  display: none;
+  width: 350px;
+  padding: 40px 20px 20px;
+  border-radius: 6px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.telephone,
+.e-mail {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 5px;
+}
+
+.form_wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.input {
+  width: 250px;
+}
+
+@media (max-width: 768px) {
+  .app {
+    height: auto;
+    padding-bottom: 300px;
+    background: url(img/cover-image.png) no-repeat bottom center;
+    background-size: 392px 461px;
+  }
+
+  video {
+    display: none;
+  }
+
+  .header {
+    padding: 41px 0 0 0;
+  }
+
+  .film {
+    margin-top: 47px;
+  }
+
+  .description {
+    font-size: 16px;
+    color: white;
+  }
+
+  .film-logo {
+    width: 340px;
+  }
+
+  .tags > * {
+    margin-right: 10px;
+  }
+
+  .tags > span:last-child {
+    margin-right: 0px;
+  }
+
+  .button_colored {
+    margin-right: 13px;
+  }
+}
+
+@media (max-width: 455px) {
+  .button_text,
+  .user-name {
+    display: none;
+  }
+}

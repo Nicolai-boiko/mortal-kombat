@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="style.css"> 
+    <title>Mortal Kombat — премьера фильма 2021</title>
+</head>
+
+<body>
+    <div class="app" id="app">
+        <header class="header">
+            <a href="/" class="logo">
+                <img src="img/logo.svg" alt="логотип: КиноПульс">
+            </a>
+
+            <a href="#" class="user">
+                <span class="user-name">Николай</span>
+                <img src="img/Avka.png" alt="Аватарка" class="user-photo">
+            </a>
+        </header>
+        <section class="film">
+            <img src="img/film-logo.png" alt="Film Logo" class="film-logo">
+            <div class="tags">
+                <span>2021</span>
+                <span>боевик, фэнтези, фантастика</span>
+                <span>США</span>
+                <span>18+</span>
+            </div>
+            <p class="description">Продолжение легендарного фильма из 90-х. Предстоит по-настоящему смертельная битва, где останется только сильнейший</p>
+            <div class="buttons-group">
+                <a data-fancybox data-src="#hidden-content" href="#modal" class="button button_colored">Предзаказ фильма</button>
+                <a data-fancybox href="https://www.youtube.com/watch?v=1ar_V1_uatA" class="button button_default">
+                    <img src="img/Play.svg" alt="icon: play" class="icon">
+                    <span class="button_text">Смотреть трейлер</span>
+                </a>
+            </div>
+        </section>
+        <div id="hidden-content" class="form">
+            <div class="form_wrapper">
+            <div class="telephone">
+                <label for="tel">Tel.:</label>
+                <input type="text" value="+375" name="tel" class="input">
+            </div>
+            <div class="e-mail">
+                <label for="email">E-mail:</label>
+                <input type="text" value="" name="email" class="input">
+            </div>
+            <div>
+                <button type="submit" class="button button_colored">Заказать</button>
+            </div>
+        </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="video/Vide-0.5.1/dist/jquery.vide.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script src="index.js"></script>
+   </body>
+</html>
